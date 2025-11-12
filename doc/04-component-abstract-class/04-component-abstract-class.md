@@ -172,7 +172,7 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
-- Designed abstract class for <!-- insert name of component here --> component
+- Designed abstract class for music component
 
 ### Updated
 
@@ -180,7 +180,7 @@ the following form: YYYY.0M.0D.
 
 ```
 
-Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
+Here `2025.11.12` would be the date of your submission, such as 2024.04.21.
 
 You may notice that things are nicely linked in the root CHANGELOG. If you'd
 like to accomplish that, you will need to make GitHub releases after each pull
@@ -188,7 +188,6 @@ request merge (or at least tag your commits). This is not required.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull

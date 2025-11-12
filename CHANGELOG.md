@@ -8,6 +8,11 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.11.12]
+
+- Made base outline of what abstract classes may look like
+-addSong and songCount abstract classes made
+
 ## [2024.12.30]
 
 - Added table-based rubrics to all 6 parts of the project
