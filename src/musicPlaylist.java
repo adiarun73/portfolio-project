@@ -1,21 +1,36 @@
 public interface musicPlaylist {
-    /**
-     * adds song to playlist
-     *
-     * @param name
-     *            the title of the song
-     * @updates this
-     * @ensures this contains a new song name
-     */
-    void addSong(String name);
 
     /**
-     * Plays a song once.
-     *
-     * @param name
-     *            the title of the song
+     * Adds a song to this playlist.
+     * 
+     * @param song
+     *            the song to add
      * @updates this
-     * @ensures the play count of name increases by 1
+     * @ensures song is in this
      */
-    void songCount(String name);
+    void addSong(String song);
+
+    /**
+     * Rates an artist.
+     * 
+     * @param artist
+     *            artist name
+     * @param rating
+     *            rating for the artist
+     * @updates this
+     * @ensures artist rating is updated to rating
+     */
+    void rateArtist(String artist, double rating);
+
+    /**
+     * Rates a song.
+     * 
+     * @param song
+     *            the song to rate
+     * @param rating
+     *            the rating to assign
+     * @updates this
+     * @ensures song rating is updated to rating
+     */
+    void rateSong(String song, double rating);
 }

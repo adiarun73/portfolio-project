@@ -9,6 +9,13 @@ the following form: YYYY.0M.0D.
 ## [Unreleased]
 
 ## [2024.12.30]
+- Updated to the component interfaces assignment.
+- Re imagined what the interfaces would look like, including the brand new kernel method
+- Did all secondary methods this time rather than just one
+- included a hierarchy to try and understand the discipline hierarchy
+- interfaces follow OSU discipline
+
+## [2024.12.30]
 
 - Added table-based rubrics to all 6 parts of the project
 - Updated gitignore to exclude more files
