@@ -1,40 +1,51 @@
-//This is a template of what I think is needed.
 public abstract class music {
-    // Constant threshold for determining a favorite song
-    protected static final int FAVORITE_RATING = 4;
-    
-    protected music() {
-        super();
-    }
-    public abstract void createNewRep();
+    protected abstract double getSongRating(String song);
+    protected abstract double getArtistRating(String artist);
+    protected abstract int getPlays(String song);
+    protected abstract Iterable<String> songs();
 
-    // Adds a song to the playlist
-    public abstract void addSong(String name);
+    // ratings for songs
+    @Override
+    public double avgRating() {
+        double total = 0;
+        int count = 0;
+        for (String song : this.songs()) {
+            total = total + this.getSongRating(song);
+            count = count + 1;
+        }
 
-    // Increments the play count for a song
-    public abstract void songCount(String name);
-
-    // Checks whether a given song meets the favorite rating threshold
-    public boolean isFavorite(String title) {
-        return this.getRating(title) >= FAVORITE_RATING;
-    }
-
-    //how many times a song has been played
-    public int getPlayCount(String title) {
-        return this.playCountOf(title);
+        if (count == 0) {
+            return 0;
+        } else {
+            return total / count;
+        }
     }
 
-    // Updates a songs rating to a new value
-    public void rateSong(String title, int rating) {
-        this.updateRating(title, rating);
+    // finds the song with the most plays
+    @Override
+    public String mostPlays() {
+        String best = "";
+        int max = -1;
+        for (String song : this.songs()) {
+            int plays = this.getPlays(song);
+            if (plays > max) {
+                max = plays;
+                best = song;
+            }
+        }
+        return best;
     }
 
-    // Returns current rating
-    protected abstract int getRating(String title);
-
-    // Returns how many plays a song has
-    protected abstract int playCountOf(String title);
-
-    // Updates a rating for a song
-    protected abstract void updateRating(String title, int rating);
+    // finds the song that has the highest rating
+    @Override
+    public boolean isFav(String song) {
+        double rating = this.getSongRating(song);
+        for (String s : this.songs()) {
+            if (this.getSongRating(s) > rating) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
+

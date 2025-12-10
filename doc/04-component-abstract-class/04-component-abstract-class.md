@@ -2,7 +2,7 @@
 
 - **Name**: Adithya Arun
 - **Dot Number**: Arun.41
-- **Due Date**: 11/10/25 @ 11:59PM
+- **Due Date**: 12/10/25 @ 11:59PM
 
 ## Assignment Overview
 

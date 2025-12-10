@@ -8,6 +8,12 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.12.10]
+
+- updated abstract classes with new kernel method included.
+- created protected abstract classes
+- isFav(), avgRating(), mostPlays() abstract classes created
+
 ## [2025.11.12]
 
 - Made base outline of what abstract classes may look like
