@@ -8,6 +8,12 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.12.10]
+- selected a representation that makes the most sense for this project idea. Is the easiest 
+way to implemet while also making it efficient.
+- attempted kernel implementation for all kernel methods created
+- included secondary methods used from assignment four
+
 ## [2025.11.12]
 
 - Made base outline of what abstract classes may look like
