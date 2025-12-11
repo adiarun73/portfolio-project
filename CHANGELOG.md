@@ -8,6 +8,12 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.12.10]
+- created test cases for kernel methods
+- attempted at making valid use cases for project
+- explained learning process throught entire project creation and key takeaways
+- updated main readMe file and removed comments
+
 ## [2025.11.12]
 
 - Made base outline of what abstract classes may look like
